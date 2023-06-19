@@ -33,13 +33,14 @@ public class Main {
         shop.tables.get(order3.tableNum).isUsing = true;
 
         //支払い処理
+        System.out.println(order2.toString());
         order2.isPaid = true;
         shop.tables.get(order2.tableNum).isUsing = false;
 
         //金額計算
-        System.out.println(order1.getTotalAmount());
-        System.out.println(order2.getTotalAmount());
-
-        System.out.println(Arrays.toString(shop.getUsingTableNumbers()));
+//        System.out.println(order1.getTotalAmount());
+//        System.out.println(order2.getTotalAmount());
+//
+//        System.out.println(Arrays.toString(shop.getUsingTableNumbers()));
     }
 }

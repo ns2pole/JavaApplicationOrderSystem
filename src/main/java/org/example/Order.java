@@ -22,4 +22,17 @@ public class Order {
         }
         return amount;
     }
+
+    @Override
+    public String toString() {
+        String str = "";
+        str = str + "注文メニュー:" + "\n";
+        for(int i = 0; i < menuList.size(); i++) {
+            str = str + this.menuList.get(i).name + "\n";
+        }
+        str = str + "卓番:" + this.tableNum + "\n";
+        str = str + "人数:" + this.guestNum + "\n";
+        str = str + "合計金額:" + this.getTotalAmount();
+        return str;
+    }
 }
